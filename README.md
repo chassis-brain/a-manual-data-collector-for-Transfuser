@@ -14,7 +14,8 @@ b.先运行point文件，用于设定上述手动选择；
      6. 路线图保存：{SAVE_ROUTE_FOLDER}/TownName/Routexxx.png
      7. 编号依据：{SCENARIO_FOLDER}/TownName/Routexxx 文件夹
 
-c.再运行main文件，r键开始采集，其余键设置与原生代码相同
+c.启动carla，再运行main文件
+r键开始采集，其余键设置与原生代码相同
 
     W            : throttle
     S            : brake
