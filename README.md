@@ -1,8 +1,12 @@
 # 一个用于手动控制的Transfuser数据采集工具
 代码基于carla中manual_control.py实现手动控制，添加地图标点自定义出生点、方向、高度、npc设置以及导航点的手动选择
+
 用于丰富transfuser数据集，方便构造多种长尾场景
+
 用法：
+
 a.将config.py顶部的base路径改为您的根目录文件夹地址
+
 b.先运行point文件，用于设定上述手动选择；
 
      地图坐标工具使用说明
@@ -15,6 +19,7 @@ b.先运行point文件，用于设定上述手动选择；
      7. 编号依据：{SCENARIO_FOLDER}/TownName/Routexxx 文件夹
 
 c.启动carla，再运行main文件
+
 r键开始采集，其余键设置与原生代码相同
 
     W            : throttle
@@ -50,4 +55,5 @@ r键开始采集，其余键设置与原生代码相同
     ESC          : quit 
 
 如果想改造成其他模型适用的数据集，只需要修改sensor_manager.py文件
+
 改造成非键盘系统的手动采集模型则需要修改controllers.py等文件，这里建议找一些适配您系统的开源代码便于改造。
